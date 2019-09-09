@@ -27,4 +27,7 @@ function typewrite() {
     
 }
 
-
+function change(x){
+    x.classList.toggle("change")
+    $(".nav-menu").toggleClass("change")
+}

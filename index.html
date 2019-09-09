@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="shortcut icon" href="/code-solid.svg" type="image/svg">
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>the-code-builder</title>
 </head>
@@ -15,18 +19,64 @@
 
 
         <section class="hero is-light is-fullheight">
+          <div class="hero-head">
+           <nav class="navbar">
+             <a class="menu" onclick="change(this)">
+               <div class="bar1"></div>
+               <div class="bar2"></div>
+               <div class="bar3"></div>
+             </a>
+           </nav>
+          </div>
             <div class="hero-body">
               <div class="container">
-                <h1 class="title">
+                <h1 class="textWhite title" style="color: white">
                   Ananthakrishnan VK
                 </h1>
-                <h2 class="subtitle">
+                <h2 class="subtitle" style="color: white">
                     I am 
                     <span id="typewrite"></span>
                 </h2>
               </div>
+              
             </div>
+            <div class="nav-menu" id="menu-bar">
+                <ul class="menu-list">
+                  <li class="item"><a href="#">Home</a></li>
+                  <li class="item"><a href="#">Projects</a></li>
+                  <li class="item"><a href="#">Resume</a></li>
+                  <li class="item"><a href="#">Contact Me</a></li>
+                </ul>
+              </div>
           </section>
+
+          <div class="projects">
+            <div class="container">
+              <h1 class="has-text-centered">
+                Projects
+              </h1>
+              <div class="columns">
+                <div class="column">
+                  <h2 class="has-text-centered">Project1</h2>
+                </div>
+                <div class="column">
+                  <h2 class="has-text-centered">Project2</h2>
+                </div>
+                <div class="column">
+                  <h2 class="has-text-centered">Project3</h2>
+                </div>
+                <div class="column">
+                  <h2 class="has-text-centered">More</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <footer class="footer">
+            <div class="content has-text-centered">
+              <i class="material-icons iconalign">code</i> with <i class="material-icons iconalign">favorite_border</i>
+            </div>
+          </footer>
          
 
     </div>
