@@ -1,4 +1,4 @@
-const elements = ['Web developer','Designer'];
+const elements = [' a Web developer',' a Designer'];
 let i = 0 ;
 let count = 0;
 let currentword = '';

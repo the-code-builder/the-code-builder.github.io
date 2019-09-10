@@ -95,3 +95,19 @@ ul.menu-list{
 .projects h2{
     font-size: 20px !important;
 }
+.myself{
+    padding-top: 32px;
+    padding-bottom: 32px; 
+}
+
+.myself h1{
+    font-size: 24px !important;
+    font-weight: 700;
+    margin: 16px;
+}
+.code-icon{
+    position: absolute;
+    left: 32px;
+    top: 32px;
+    color: white;
+}

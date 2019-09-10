@@ -1,0 +1,371 @@
+.outer{
+    width:500px;
+    height: 500px;
+    border: 5px green solid;
+    border-radius: 50%;
+}
+.middle{
+    background: yellow;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+div.inner{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 11;
+    background: orangered;
+    transform: translate(100px,100px);
+    position: absolute;
+}
+
+.code{
+    transform: translate(49px,71px);
+    
+}
+
+.bar1{
+    position: relative;
+    border-left: 10px white solid;
+    border-top: 10px white solid;
+    transform: rotate(-45deg) translate(0px,0px);
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+.bar2{
+    position: relative;
+    width:120px;
+    height: 10px;
+    background-color: white;
+    transform: rotate(-75deg) translate(-37px,-53px);
+    float: left;
+}
+.bar3{
+    position: relative;
+    border-right: 10px white solid;
+    border-top: 10px white solid;
+    transform: rotate(45deg) translate(-7px, -5px);
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+
+.oval{
+    display: block;
+    width: 200px;
+    height: 500px;
+    background: rgb(102, 223, 69);
+    border-radius: 50%;
+    z-index: 5;
+    box-sizing: border-box;
+    position: relative;
+    transform: translate(150px,0px)
+}
+.oval::before,.oval::after{
+    content: '';
+    display: block;
+    width: 200px;
+    height: 500px;
+    border-radius: 50%;
+    position: absolute;
+    
+    background: rgb(102, 223, 69);
+    
+}
+.oval::before{
+    transform: rotate(60deg)
+
+}
+.oval::after{
+    transform: rotate(-60deg) translate(358px,-205px);
+    z-index: -1;
+}
+.circle{
+    border-radius: 50%;
+    border: 5px red solid;
+    z-index: 800;
+    width: 400px;
+    height: 400px;
+    background: white;
+    transform: translate(-100px,45px);
+}
+.css{
+    margin-top: 10px;
+    animation: 3s blink ease-in-out infinite alternate;
+    width: 500px;
+    text-align: center;
+    
+}
+@keyframes blink{
+    0%{
+        font-size: 13px;
+        text-shadow: 0px 0px 5px #d11717;
+    }
+    
+    100%{
+        font-size: 30px;
+        text-shadow: 0px 0px 15px #fff700;
+    }
+}
+
+.flower1{
+    animation: fall 5s ease-in-out infinite;
+    position: absolute;
+    width: 35px;
+    background: #fff700;
+    height: 10px;
+    border-radius: 50%;
+}
+.flower1::before , .flower1::after{
+    content: '';
+
+    position: absolute;
+    width: 35px;
+    background: #fff700;
+    height: 10px;
+    border-radius: 50%;
+}
+.flower1::after{
+    transform: rotate(60deg)
+}
+.flower1::before{
+    transform: rotate(-60deg)
+}
+
+
+
+
+
+/* flower start */
+.flower2{
+    animation: fall 2s 1s ease-in infinite;
+    position: absolute;
+    left: 250px;
+    width: 35px;
+    background: #00ff48;
+    z-index: 999;
+    height: 10px;
+    border-radius: 50%;
+}
+.flower2::before , .flower2::after{
+    content: '';
+
+    position: absolute;
+    width: 35px;
+    background: #00ff48;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 999;
+}
+.flower2::after{
+    transform: rotate(60deg)
+}
+.flower2::before{
+    transform: rotate(-60deg)
+}
+/* flower end */
+
+
+
+
+/* flower start */
+.flower3{
+    animation: fall 4s ease-in-out infinite;
+    position: absolute;
+    width: 35px;
+    background: #ff3c00;
+    height: 10px;
+    left: 55px;
+    z-index: 999;
+    border-radius: 50%;
+}
+.flower3::before , .flower3::after{
+    content: '';
+    z-index: 999;
+    position: absolute;
+    width: 35px;
+    background: #ff3c00;
+    height: 10px;
+    border-radius: 50%;
+}
+.flower3::after{
+    transform: rotate(60deg)
+}
+.flower3::before{
+    transform: rotate(-60deg)
+}
+/* flower end */
+
+
+
+
+
+/* flower start */
+.flower4{
+    animation: fall 3s 3s ease-in infinite;
+    position: absolute;
+    width: 35px;
+    background: #d54bda;
+    height: 10px;
+    left: 80px;
+    z-index: 999;
+    border-radius: 50%;
+}
+.flower4::before , .flower4::after{
+    content: '';
+    z-index: 999;
+    position: absolute;
+    width: 35px;
+    background: #d54bda;
+    height: 10px;
+    border-radius: 50%;
+}
+.flower4::after{
+    transform: rotate(60deg)
+}
+.flower4::before{
+    transform: rotate(-60deg)
+}
+/* flower end */
+
+
+
+
+
+/* flower start */
+.flower5{
+    animation: fall 4s 1s linear infinite;
+    position: absolute;
+    width: 35px;
+    background: #43c2be;
+    height: 10px;
+    left: 112px;
+    z-index: 999;
+    border-radius: 50%;
+}
+.flower5::before , .flower5::after{
+    content: '';
+    z-index: 999;
+    position: absolute;
+    width: 35px;
+    background: #43c2be;
+    height: 10px;
+    border-radius: 50%;
+}
+.flower5::after{
+    transform: rotate(60deg)
+}
+.flower5::before{
+    transform: rotate(-60deg)
+}
+/* flower end */
+
+
+
+
+
+/* flower start */
+.flower6{
+    animation: fall 3.5s .5s ease-in-out infinite;
+    position: absolute;
+    width: 35px;
+    background: #ff009d;
+    height: 10px;
+    left: 355px;
+    z-index: 999;
+    border-radius: 50%;
+}
+.flower6::before , .flower6::after{
+    content: '';
+    z-index: 999;
+    position: absolute;
+    width: 35px;
+    background: #ff009d;
+    height: 10px;
+    border-radius: 50%;
+}
+.flower6::after{
+    transform: rotate(60deg)
+}
+.flower6::before{
+    transform: rotate(-60deg)
+}
+/* flower end */
+
+
+
+
+
+/* flower start */
+.flower7{
+    animation: fall 3s 1s linear infinite;
+    position: absolute;
+    width: 35px;
+    background: #004cff;
+    height: 10px;
+    left: 435px;
+    z-index: 999;
+    border-radius: 50%;
+}
+.flower7::before , .flower7::after{
+    content: '';
+    z-index: 999;
+    position: absolute;
+    width: 35px;
+    background: #004cff;
+    height: 10px;
+    border-radius: 50%;
+}
+.flower7::after{
+    transform: rotate(60deg)
+}
+.flower7::before{
+    transform: rotate(-60deg)
+}
+/* flower end */
+
+
+
+
+
+/* flower start */
+.flower8{
+    animation: fall 4s 2s linear infinite;
+    position: absolute;
+    width: 35px;
+    background: #ff3c00;
+    height: 10px;
+    left: 520px;
+    z-index: 999;
+    border-radius: 50%;
+}
+.flower8::before , .flower8::after{
+    content: '';
+    z-index: 999;
+    position: absolute;
+    width: 35px;
+    background: #ff3c00;
+    height: 10px;
+    border-radius: 50%;
+}
+.flower8::after{
+    transform: rotate(60deg)
+}
+.flower8::before{
+    transform: rotate(-60deg)
+}
+/* flower end */
+
+
+
+
+@keyframes fall{
+    0%{
+        top: 0vh;
+    }
+    100%{
+        top: 90vh;
+    }
+}
