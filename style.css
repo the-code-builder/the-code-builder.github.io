@@ -135,7 +135,7 @@ ul.menu-list{
     transition: 1s ;
 }
 .onam:hover{
-    background: rgb(0, 0, 0);
+    background: rgb(255, 0, 0);
 }
 .cgpc{
     background-image: url('/img/career.jpg');
@@ -146,7 +146,7 @@ ul.menu-list{
     transition: 1s ;
 }
 .cgpc:hover{
-    background: rgb(0, 0, 0);
+    background: rgb(255, 0, 0);
 }
 .golazo{
     background-image: url('/img/football.png');
@@ -157,7 +157,7 @@ ul.menu-list{
     border-radius: 8px;
 }
 .golazo:hover{
-    background: rgb(0, 0, 0);
+    background: rgb(255, 0, 0);
 }
 
 .more{
@@ -169,8 +169,31 @@ ul.menu-list{
     border-radius: 8px;
 }
 .more:hover{
-    background: rgb(0, 0, 0);
+    background: rgb(255, 0, 0);
 }
 .more:hover p{
     color: whitesmoke;
+}
+
+.findme{
+    padding-top: 40px;
+}
+.at:hover{
+    color: red
+}
+
+.github:hover{
+    color: green
+}
+.instagram:hover{
+    color:  rgb(225,48,108) 
+}
+.twitter:hover{
+    color: rgb(29, 161, 242);
+}
+.fa-heart{
+    color: red;
+}
+.fa-coffee{
+    color: brown;
 }
