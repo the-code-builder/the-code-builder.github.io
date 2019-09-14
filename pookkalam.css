@@ -369,3 +369,16 @@ div.inner{
         top: 90vh;
     }
 }
+
+.wish{
+    width: 300px;
+    height: 60px;
+}
+
+.test{
+    shape-outside: ellipse(10px 20px) ;
+    width: 100px;
+    height: 100px;
+    float: left;
+    
+}

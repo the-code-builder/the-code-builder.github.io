@@ -12,6 +12,10 @@ body::-webkit-scrollbar{
     box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     
 }
+.tilt{
+    
+    height: 112vh;
+}
 .textWhite{
     text-shadow: 4px 4px 4px black;
 }
@@ -100,6 +104,7 @@ ul.menu-list{
     padding-bottom: 32px; 
 }
 
+
 .myself h1{
     font-size: 24px !important;
     font-weight: 700;
@@ -110,4 +115,62 @@ ul.menu-list{
     left: 32px;
     top: 32px;
     color: white;
+}
+.projects div.column{
+    height: 250px;
+}
+.projects h2{
+    padding-top: 30%;
+}
+
+.projects .column{
+    margin: 5px;
+}
+.onam{
+    background-image: url('/img/onam.PNG');
+    background-position: center;
+    background-size: 230px;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    transition: 1s ;
+}
+.onam:hover{
+    background: rgb(0, 0, 0);
+}
+.cgpc{
+    background-image: url('/img/career.jpg');
+    background-position: center;
+    background-size: 230px;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    transition: 1s ;
+}
+.cgpc:hover{
+    background: rgb(0, 0, 0);
+}
+.golazo{
+    background-image: url('/img/football.png');
+    background-position: center;
+    background-size: 230px;
+    background-repeat: no-repeat;
+    transition: background 1s linear ;
+    border-radius: 8px;
+}
+.golazo:hover{
+    background: rgb(0, 0, 0);
+}
+
+.more{
+    background: white;
+    background-position: center;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    transition: 1s ;
+    border-radius: 8px;
+}
+.more:hover{
+    background: rgb(0, 0, 0);
+}
+.more:hover p{
+    color: whitesmoke;
 }
