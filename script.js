@@ -31,3 +31,8 @@ function change(x){
     x.classList.toggle("change")
     $(".nav-menu").toggleClass("change")
 }
+
+function hide(){
+    $(".nav-menu").toggleClass("change");
+    $(".menu").toggleClass("change");
+}
