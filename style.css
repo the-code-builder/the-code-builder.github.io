@@ -25,10 +25,7 @@ body::-webkit-scrollbar{
 html {
     scroll-behavior: smooth;
   }
-.tilt{
-    
-    height: 112vh;
-}
+
 .fa-chevron-circle-down{
     font-size: 40px;
     color: white;
