@@ -17,10 +17,12 @@
 <body>
     <div>
 
-
+        <div class="down-arrow">
+            <a onclick="projects()"><i class="fa fa-chevron-circle-down fa-2x" aria-hidden="true"></i></a>
+        </div>
         <section class="hero is-light is-fullheight tilt">
           <div class="hero-head">
-           <nav class="navbar">
+           <nav class="navbar" id="nav-bar">
              
              <a class="menu" onclick="change(this)">
                <div class="bar1"></div>
@@ -35,7 +37,7 @@
                   Ananthakrishnan VK
                 </h1>
                 <h2 class="subtitle" style="color: white">
-                    I am 
+                    I
                     <span id="typewrite"></span>
                 </h2>
               </div>
@@ -43,21 +45,26 @@
             </div>
             <div class="nav-menu" >
                 <ul class="menu-list">
-                  <li class="item"><a href="#" onclick="hide()" >Home</a></li>
-                  <li class="item"><a href="#" onclick="hide()">Projects</a></li>
-                  <li class="item"><a href="#" onclick="hide()">Resume</a></li>
-                  <li class="item"><a href="#" onclick="hide()">Contact Me</a></li>
+                  <li class="item"><a href="#" onclick="hide(1)">Home</a></li>
+                  <li class="item"><a href="#proj" onclick="hide(2)">Projects</a></li>
+                  <li class="item"><a href="#" onclick="hide(3)">Resume</a></li>
+                  <li class="item"><a href="#" onclick="hide(4)">Contact Me</a></li>
                 </ul>
               </div>
           </section>
-          <div class="myself">
+          <div class="myself" id="myse">
             <div class="container">
               <h1 class="has-text-centered">
                 Hi I am Ananthakrishnan. Nice to meet you
               </h1>
+              <p class="has-text-centered">
+                A 20 year old computer science engineering student who believes in the power of
+                "do what makes you happy"😊
+                
+              </p>
             </div>
           </div>
-          <div class="projects">
+          <div class="projects" id="proj">
             <div class="container">
               <h1 class="has-text-centered">
                 Projects
@@ -75,6 +82,10 @@
                   <p class="has-text-centered">Android 
                     <a href="https://github.com/the-code-builder/CGPC/blob/master/app/build/outputs/apk/debug/app-debug.apk" >app</a>
                   </p>
+                  <br>
+                  <p class="has-text-centered">Website
+                      <a href="https://cgpc-6615.web.app" target="_blank" >Link<i class="fas fa-external-link-alt"></i></a>
+                    </p>
                 </div>
                 <div class="column golazo">
                   <h2 class="has-text-centered"><a href="/broken.html">Golazo</a></h2>

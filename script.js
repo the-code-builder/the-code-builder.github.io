@@ -1,4 +1,4 @@
-const elements = [' a Web developer',' a Designer'];
+const elements = [' am a  Developer',' Design'];
 let i = 0 ;
 let count = 0;
 let currentword = '';
@@ -36,3 +36,11 @@ function hide(){
     $(".nav-menu").toggleClass("change");
     $(".menu").toggleClass("change");
 }
+
+function projects(){
+    
+    var  v =  document.getElementById("myse");
+    v.scrollIntoView();
+}
+
+
