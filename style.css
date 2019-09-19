@@ -224,3 +224,87 @@ ul.menu-list{
     font-size: 10px;
     vertical-align: top
 }
+.tech p{
+    line-height: 30px;
+}
+.tech code{
+    color: #000000;
+    font-weight: 100;
+}
+.history{
+    padding-top: 32px;
+}
+.history-title{
+    word-spacing: -4px;
+    font-weight: bold;
+}
+.hi{
+    vertical-align: 10px;
+    font-size: 20px;
+}
+.s{
+    font-size: 35px;
+}
+.tory{
+    vertical-align: 2px;
+    font-size: 20px;
+}
+.timeline{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 32px;
+}
+.timeline-item {
+    align-self: flex-end;
+    position: relative;
+    width: 50%;
+    padding: 32px;
+}
+
+.timeline-item::before{
+    content: "";
+    background-color: #dbdbdb;
+    display: block;
+    width: .1em;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.timeline-item:nth-child(2n) {
+    align-self: flex-start;
+    margin-left: 0;
+    text-align: end;
+    margin-right: 2em;
+}
+
+.timeline-item:nth-child(2n)::before{
+    right: -.1em;
+    left: auto;
+}
+
+.marker {
+    position: absolute;
+    background: #eb3939;
+    border: .1em solid #eb3939;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: .8em;
+    left: -.35em;
+    top: 2.3rem;
+    width: .8em;
+}
+
+.timeline-item:nth-child(2n) .marker {
+    left: auto;
+    right: -.45em;
+}
+
+.green{
+    background: #33e03f;
+    border: #33e03f;
+}
