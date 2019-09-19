@@ -228,6 +228,22 @@ ul.menu-list{
     color: #000000;
     font-weight: 100;
 }
+.tech .column{
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px black;
+    margin: 5px;
+}
+.under{
+    box-shadow: inset 0 -4px 0 0px pink;
+    transition: 1s;
+}
+.under:hover{
+    box-shadow: inset 0 -8px 0 0px #33e03f;
+}
+.me{
+    display: flex;
+    align-items: center
+}
 .history{
     padding-top: 32px;
 }
@@ -304,4 +320,11 @@ ul.menu-list{
 .green{
     background: #33e03f;
     border: #33e03f;
+}
+
+
+.contact h1{
+    font-size: 24px !important;
+    font-weight: 700;
+    margin: 16px;
 }
