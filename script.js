@@ -32,15 +32,31 @@ function change(x){
     $(".nav-menu").toggleClass("change")
 }
 
-function hide(){
+function hide(i){
     $(".nav-menu").toggleClass("change");
     $(".menu").toggleClass("change");
+    switch(i){
+        case 'projects': 
+                        console.log(i)
+                        var  p =  document.getElementById("proj");
+                        p.scrollIntoView();
+                        console.log(p)
+                        break;
+        case 'contacts': 
+                        console.log(i)
+                        var  c =  document.getElementById("contact");
+                        c.scrollIntoView();
+                        console.log(c)
+                        break;
+
+    }
 }
 
-function projects(){
+function myself(){
     
     var  v =  document.getElementById("myse");
     v.scrollIntoView();
+    console.log(v)
 }
 
 

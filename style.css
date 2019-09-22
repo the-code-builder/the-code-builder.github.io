@@ -1,3 +1,9 @@
+@media screen and (min-width: 600px) {
+   
+    
+  }
+
+
 @keyframes blink{
     0%{
         opacity: 0;
@@ -35,7 +41,7 @@ html {
     position: absolute;
     top: 86vh;
     left: 48vw;
-    z-index: 999;
+    z-index: 0;
     animation: updown 1.5s linear infinite alternate; 
 }
 .textWhite{
@@ -90,18 +96,23 @@ body::-webkit-scrollbar-thumb {
 }
 
 .nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
     background: black;
     height: 100vh;
-    right: -50vw;
+    top: -100vh;
     position: absolute;
-    width: 50vw; 
-    transition: right .5s; 
+    width: 100vw; 
+    transition: all .5s; 
 }
 ul.menu-list{
     margin-top: 10vh;
 }
 .change.nav-menu{
-    right: 0vw;
+    top: 0vw;
+    width: 100vw;
 }
 
 .item{
@@ -126,7 +137,14 @@ ul.menu-list{
     padding-bottom: 32px; 
 }
 
-
+.sep{
+    width: 5px;
+    height: 5px;
+    background: #000000;
+}
+.black.fa-heart{
+    color: #000000
+}
 .myself h1{
     font-size: 24px !important;
     font-weight: 700;
@@ -187,6 +205,12 @@ ul.menu-list{
 
 .findme{
     padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.findme div{
+    margin: 16px;
 }
 .fa-at:hover{
     color: red
@@ -231,7 +255,7 @@ ul.menu-list{
 .tech .column{
     border-radius: 5px;
     box-shadow: 0px 0px 3px 0px black;
-    margin: 5px;
+    margin: 20px;
 }
 .under{
     box-shadow: inset 0 -4px 0 0px pink;
