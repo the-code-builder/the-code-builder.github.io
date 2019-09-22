@@ -107,6 +107,15 @@ body::-webkit-scrollbar-thumb {
     width: 100vw; 
     transition: all .5s; 
 }
+.logo a{
+    font-family: 'Mansalva', cursive;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    
+    left: 30px;
+}
 ul.menu-list{
     margin-top: 10vh;
 }
@@ -206,6 +215,7 @@ ul.menu-list{
 .findme{
     padding-top: 40px;
     display: flex;
+    
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -346,9 +356,37 @@ ul.menu-list{
     border: #33e03f;
 }
 
-
+.contact{
+    background: #dbdbdb;
+    padding: 60px;
+}
 .contact h1{
     font-size: 24px !important;
     font-weight: 700;
-    margin: 16px;
+    margin-bottom: 40px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form input{
+    margin: 8px;
+    padding: 8px;
+    width: 50%;
+    outline: none;
+    border: none;
+}
+.form textarea{
+    margin: 8px;
+    width: 50%;
+    padding: 8px;    
+    outline: none;
+    border: none;
+}
+
+.button{
+    margin-top: 16px;
 }

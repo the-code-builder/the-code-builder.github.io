@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-    
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_sZyYMZA6bfRb3OdvzXC4g");
+   })();
+</script>
     <link rel="shortcut icon" href="/code-solid.svg" type="image/svg">
     <script src="script.js"></script>
-    
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c9f2227385.js"></script>
@@ -23,7 +28,7 @@
         <section class="hero is-light is-fullheight">
           <div class="hero-head">
            <nav class="navbar" id="nav-bar">
-             
+             <div class="logo"> <a>A.</a> </div>
              <a class="menu" onclick="change(this)">
                <div class="bar1"></div>
                <div class="bar2"></div>
@@ -45,10 +50,10 @@
             </div>
             <div class="nav-menu" >
                 <ul class="menu-list">
-                  <li class="item"><a href="#" onclick="hide('home')">Home</a></li>
-                  <li class="item"><a href="#" onclick="hide('projects')">Projects</a></li>
-                  <li class="item"><a href="/Resume.pdf" onclick="hide('resume')">Resume</a></li>
-                  <li class="item"><a href="#" onclick="hide('contacts')">Contact Me</a></li>
+                  <li class="item"><a href="#" onclick="hide()">Home</a></li>
+                  <li class="item"><a href="#proj" onclick="hide()">Projects</a></li>
+                  <li class="item"><a href="/Resume.pdf" onclick="hide()">Resume</a></li>
+                  <li class="item"><a href="#contact" onclick="hide()">Contact Me</a></li>
                 </ul>
               </div>
           </section>
@@ -221,13 +226,19 @@
               <h1 class="has-text-centered">
                 Contact Me
               </h1>
+              <div class="form">
+                <input type="text" id="name" placeholder="Name">
+                <input type="email" name="mail" id="mail" width="30" placeholder="email">
+                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Message"></textarea>
+                <button class="button" id="btn" onclick="sendMail()">Send</button>
+              </div>
             </div>
 
           </div>
 
           <footer class="footer">
             <div class="content has-text-centered">
-              <i class="fas fa-code"></i> with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i>
+              <i class="fas fa-code"></i> with <i class="fas fa-hexart"></i> and <i class="fas fa-coffee"></i>
               <div class=" findme">
                 <div class="has-text-centered">
                   <a href="mailto:krishnaanthvk@gmail.com">

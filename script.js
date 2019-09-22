@@ -4,6 +4,8 @@ let count = 0;
 let currentword = '';
 let letter = '';
 
+
+
 $(document).ready(function(){
     typewrite();
 });
@@ -60,3 +62,37 @@ function myself(){
 }
 
 
+function sendMail(){
+    var name = document.getElementById("name").value;
+    var mail = document.getElementById("mail").value;
+    var msg = document.getElementById("msg").value;
+    console.log(name)
+    console.log(mail)
+    console.log(msg)
+
+    var templateParams = {
+        name: name,
+        message_html: msg,
+        from_name:name,
+        reply_email: mail
+    };
+    document.getElementById("btn").innerHTML = "Sending....";
+    document.getElementById("btn").disabled = true;
+    emailjs.send('default_service', 'template_pD9JGafD' , templateParams)
+    .then(function(response){
+        console.log('Success', response.status,response.text);
+        document.getElementById("btn").disabled = false;
+        document.getElementById("btn").innerHTML = "Send";
+        window.alert("Message sent...! We will get back to you")
+    }, function(error){
+        console.log('FAILED...', error);
+        document.getElementById("btn").disabled = false;
+        document.getElementById("btn").innerHTML = "Send";
+    }
+    );
+
+    document.getElementById("name").value='';
+    document.getElementById("mail").value='';
+    document.getElementById("msg").value='';
+
+}
