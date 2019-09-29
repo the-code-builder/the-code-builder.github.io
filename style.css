@@ -131,7 +131,7 @@ ul.menu-list{
 
 .projects{
     padding-top: 32px;
-    padding-bottom: 32px; 
+    padding-bottom: 32px;
 }
 .projects h1{
     font-size: 24px !important;
@@ -212,35 +212,6 @@ ul.menu-list{
     color: whitesmoke;
 }
 
-.findme{
-    padding-top: 40px;
-    display: flex;
-    
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.findme div{
-    margin: 16px;
-}
-.fa-at:hover{
-    color: red
-}
-
-.fa-github:hover{
-    color: green
-}
-.fa-instagram:hover{
-    color:  rgb(225,48,108) 
-}
-.fa-twitter:hover{
-    color: rgb(29, 161, 242);
-}
-.fa-heart{
-    color: red;
-}
-.fa-coffee{
-    color: brown;
-}
 .cgpc>p>a{
     color: #4a4a4a;
 }
@@ -280,6 +251,8 @@ ul.menu-list{
 }
 .history{
     padding-top: 32px;
+    padding-bottom: 32px;
+    background: #f5f5f5;
 }
 .history-title{
     word-spacing: -4px;
@@ -357,13 +330,14 @@ ul.menu-list{
 }
 
 .contact{
-    background: #dbdbdb;
+    background: #123c69;
     padding: 60px;
 }
 .contact h1{
     font-size: 24px !important;
     font-weight: 700;
     margin-bottom: 40px;
+    color: white;
 }
 .form{
     display: flex;
@@ -389,4 +363,53 @@ ul.menu-list{
 
 .button{
     margin-top: 16px;
+}
+
+.footer {
+    background: #ac3b61;
+    
+}
+.footer *{
+    color: black
+}
+
+.findme{
+    padding-top: 40px;
+    display: flex;
+    
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.findme div{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+    padding: 16px;
+    
+}
+.fa-envelope{
+    transition: color .5s
+}
+.fa-github{
+    transition: color .5s
+}
+.fa-instagram{
+    transition: color .5s
+}
+.fa-twitter{
+    transition: color .5s
+}
+.fa-envelope:hover{
+    color: white
+}
+.fa-github:hover{
+    color: #33e03f;
+}
+.fa-instagram:hover{
+    color:  rgb(242, 255, 1) 
+}
+.fa-twitter:hover{
+    color: rgb(29, 161, 242);
 }
