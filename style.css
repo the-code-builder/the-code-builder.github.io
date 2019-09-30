@@ -1,7 +1,8 @@
-@media screen and (min-width: 600px) {
-   
-    
-  }
+@media screen and (max-width: 1024px) {
+    .projects{
+        margin: 15px;
+    }
+}
 
 
 @keyframes blink{
@@ -15,10 +16,12 @@
 
 @keyframes updown {
     0%{
+        opacity: 1;
         top: 88vh
     }
     100%{
-        top: 86vh
+        opacity: 0;
+        top: 84vh
     }
 }
 
@@ -42,7 +45,7 @@ html {
     top: 86vh;
     left: 48vw;
     z-index: 0;
-    animation: updown 1.5s linear infinite alternate; 
+    animation: updown 1.5s 1s linear infinite alternate; 
 }
 .textWhite{
     text-shadow: 4px 4px 4px black;
@@ -129,6 +132,10 @@ ul.menu-list{
     font-size: 30px;
 }
 
+
+/* projects */
+
+
 .projects{
     padding-top: 32px;
     padding-bottom: 32px;
@@ -141,37 +148,18 @@ ul.menu-list{
 .projects h2{
     font-size: 20px !important;
 }
-.myself{
-    padding-top: 32px;
-    padding-bottom: 32px; 
-}
-
-.sep{
-    width: 5px;
-    height: 5px;
-    background: #000000;
-}
-.black.fa-heart{
-    color: #000000
-}
-.myself h1{
-    font-size: 24px !important;
-    font-weight: 700;
-    margin: 16px;
-}
-.code-icon{
-    position: absolute;
-    left: 32px;
-    top: 32px;
-    color: white;
-}
 .projects div.column{
     height: 250px;
-}
-.projects h2{
-    padding-top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
 
+.projects .column a:hover{
+    color: white;
+}
 .projects .column{
     margin: 5px;
 }
@@ -226,6 +214,31 @@ ul.menu-list{
     font-size: 10px;
     vertical-align: top
 }
+.myself{
+    padding-top: 32px;
+    padding-bottom: 32px; 
+}
+
+.sep{
+    width: 5px;
+    height: 5px;
+    background: #000000;
+}
+.black.fa-heart{
+    color: #000000
+}
+.myself h1{
+    font-size: 24px !important;
+    font-weight: 700;
+    margin: 16px;
+}
+.code-icon{
+    position: absolute;
+    left: 32px;
+    top: 32px;
+    color: white;
+}
+
 .tech p{
     line-height: 30px;
 }
