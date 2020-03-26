@@ -67,6 +67,9 @@ html {
     margin: 6px 0;
     transition: .4s;
 }
+.menu-list a{
+    color: white;
+}
 .change .bar1{
     transform: rotate(-45deg) translate(-4px,10px)
 }
@@ -81,6 +84,24 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.banner{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-image: url('/img//notebook-1280538_1280.jpg');
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-weight: 700;
+}
+.name{
+    font-size: 32px;
+    color: white;
+    font-style: bold;
 }
 body::-webkit-scrollbar-thumb {
     border-radius: 6px;
@@ -284,7 +305,7 @@ ul.menu-list{
 }
 .timeline{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
     width: 100%;
     padding-top: 32px;
@@ -408,7 +429,7 @@ ul.menu-list{
 .fa-github{
     transition: color .5s
 }
-.fa-instagram{
+.fa-gitlab{
     transition: color .5s
 }
 .fa-twitter{
@@ -420,8 +441,8 @@ ul.menu-list{
 .fa-github:hover{
     color: #33e03f;
 }
-.fa-instagram:hover{
-    color:  rgb(242, 255, 1) 
+.fa-gitlab:hover{
+    color:  rgb(255, 103, 1) 
 }
 .fa-twitter:hover{
     color: rgb(29, 161, 242);
