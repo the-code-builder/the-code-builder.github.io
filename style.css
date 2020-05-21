@@ -3,16 +3,67 @@
     padding: 0px;
     box-sizing: border-box;
 }
+.container{
+    
+}
 .banner{
+    position: fixed;
     padding-left: 10%;
     width: 100vw;
     height: 100vh;
     flex-direction: column;
+    z-index: -1;
     display: flex;
     justify-content: center;
-    background: linear-gradient(127deg, rgba(255,192,203,1) 72%, rgba(0,212,255,1) 72%);
+    /* background:rgb(34, 29, 29); */
+    /* background: greenyellow; */
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0F2027, #203A43, #2C5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 .title{
     font-size: 42px;
     font-weight: 800;
+    color: whitesmoke;
+    z-index: 999;
+}
+.tag{
+    color: green;
+    z-index: 999;
+}
+.fa-angle-double-right{
+    vertical-align: middle;
+    
+    
+}
+.profile{
+    margin-top: 50vh;
+    width: 50vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+.tile{
+   
+    margin: 8px;
+    height: 300px;
+    width: 300px;
+    background-color: aliceblue;
+    z-index: 100;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    
+    margin-top: 12px;
+    color: white;
+}
+.social .fab{
+    margin-right: 12px;
+}
+.fab{
+    font-size: 1.5rem;
 }
