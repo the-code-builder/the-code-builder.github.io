@@ -50,11 +50,15 @@ body{
     margin-top: 12px;
     color: white;
 }
+.social a:visited{
+    color: white;
+}
 .social .fab{
     margin-right: 12px;
 }
 .fab{
     font-size: 1.5rem;
+    
 }
 
 
@@ -81,12 +85,14 @@ body{
 
 
 .timeline{
+
     color: whitesmoke;
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 100%;
     padding-top: 32px;
+    margin-bottom: 64px;
 }
 .timeline-item {
     align-self: flex-end;
@@ -142,6 +148,48 @@ body{
 }
 
 
+
+
+
+
+.proj{
+    width: 70%;
+    text-align: left;
+    font-size: 32px;
+    color: whitesmoke;
+    font-weight: 200;
+    padding-bottom: 16px;
+    border-bottom: 2px whitesmoke solid;
+    
+}
+
+.p-item{
+    margin: auto;
+    width: 90%;
+    height: 50vh;
+    background-color: #203A43;
+    font-size: 16px;
+    padding: 16px;
+}
+.p-item h4{
+    text-align: center;
+    padding: 16px;
+}
+
+.p-item a{
+    margin-left: ;
+    color: beige;
+}
+
+.p-item .fas{
+    font-size: 12px;
+}
+
+.p-item img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
